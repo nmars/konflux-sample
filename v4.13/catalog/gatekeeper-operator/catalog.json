@@ -125,7 +125,7 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "gcr.io/kubebuilder/kube-rbac-proxy:v0.8.0"
+            "image": "registry.redhat.io/openshift4/ose-kube-rbac-proxy@sha256:2906683eed60415f717100e712fc3a1be2836a1c35d3e50c9bf0112e52ab1116"
         },
         {
             "name": "gatekeeper",
@@ -190,7 +190,7 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "gcr.io/kubebuilder/kube-rbac-proxy:v0.8.0"
+            "image": "registry.redhat.io/openshift4/ose-kube-rbac-proxy@sha256:2906683eed60415f717100e712fc3a1be2836a1c35d3e50c9bf0112e52ab1116"
         },
         {
             "name": "gatekeeper",
@@ -255,7 +255,7 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "gcr.io/kubebuilder/kube-rbac-proxy:v0.8.0"
+            "image": "registry.redhat.io/openshift4/ose-kube-rbac-proxy@sha256:2906683eed60415f717100e712fc3a1be2836a1c35d3e50c9bf0112e52ab1116"
         },
         {
             "name": "gatekeeper",
@@ -320,7 +320,7 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "gcr.io/kubebuilder/kube-rbac-proxy:v0.8.0"
+            "image": "registry.redhat.io/openshift4/ose-kube-rbac-proxy@sha256:2906683eed60415f717100e712fc3a1be2836a1c35d3e50c9bf0112e52ab1116"
         },
         {
             "name": "gatekeeper",
@@ -385,7 +385,7 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "gcr.io/kubebuilder/kube-rbac-proxy:v0.8.0"
+            "image": "registry.redhat.io/openshift4/ose-kube-rbac-proxy@sha256:2906683eed60415f717100e712fc3a1be2836a1c35d3e50c9bf0112e52ab1116"
         },
         {
             "name": "",
