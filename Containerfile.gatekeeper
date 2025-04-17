@@ -23,3 +23,10 @@ COPY --from=builder /go/src/github.com/open-policy-agent/gatekeeper/manager .
 RUN microdnf -y update && microdnf -y clean all
 USER 65532:65532
 ENTRYPOINT ["/manager"]
+
+LABEL name="konflux-sample-container" \
+    io.k8s.display-name="Konflux Sample Container" \
+    io.k8s.description="Konflux Sample Container" \
+    description="Konflux Sample Container" \
+    summary="Konflux Sample Container" \
+    com.redhat.component="konflux-sample-container"
