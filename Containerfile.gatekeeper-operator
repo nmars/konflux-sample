@@ -40,3 +40,11 @@ RUN microdnf -y update && microdnf -y clean all
 USER 65532:65532
 
 ENTRYPOINT ["/manager"]
+
+
+LABEL name="konflux-sample-operator" \
+    io.k8s.display-name="Konflux Sample Operator" \
+    io.k8s.description="Konflux Sample Operator" \
+    description="Konflux Sample Operator" \
+    summary="Konflux Sample Operator" \
+    com.redhat.component="konflux-sample-operator"
