@@ -7,12 +7,9 @@ metadata:
     build.appstudio.redhat.com/target_branch: '{{target_branch}}'
     pipelinesascode.tekton.dev/cancel-in-progress: "false"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
-    # when adding filter for directory use "directory/***".pathChanged()
-    # when adding filter for git submodule use "submodule".pathChanged()
-    pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch == "main" &&
-      (".tekton/gatekeeper-operator-push.yaml".pathChanged() ||
-      "Containerfile.gatekeeper-operator".pathChanged() ||
-      "gatekeeper-operator".pathChanged())
+    pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch
+      == "main" && (".tekton/gatekeeper-operator-push.yaml".pathChanged() || "Containerfile.gatekeeper-operator".pathChanged()
+      || "gatekeeper-operator".pathChanged())
   creationTimestamp: null
   labels:
     appstudio.openshift.io/application: konflux-sample
@@ -593,7 +590,8 @@ spec:
       optional: true
     - name: netrc
       optional: true
-  taskRunTemplate: {}
+  taskRunTemplate:
+    serviceAccountName: build-pipeline-konflux-sample-operator
   workspaces:
   - name: git-auth
     secret:
